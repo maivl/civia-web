@@ -1,0 +1,14 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "camelcase": [1],
+    "no-unused-vars": [0],
+    "indent": [1, 4],
+    "semi": [1, "always"],
+    "multiline-ternary": [0],
+    "no-return-assign": [0],
+    "n/no-callback-literal": [0],
+    "no-template-curly-in-string": [0],
+    "no-use-before-define": 0
+  }
+}

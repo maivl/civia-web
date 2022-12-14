@@ -1,0 +1,13 @@
+.head{
+    background-color: #DEFAE1;
+
+    .content{
+        width:1018px;
+        margin:auto;
+    }
+}
+
+.nav{
+    display: flex;
+    height: 541px;
+}
