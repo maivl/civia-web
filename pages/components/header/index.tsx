@@ -1,15 +1,30 @@
 import { FC } from 'react';
+import Image from 'next/image';
 import classnames from 'classnames/bind';
 import styles from './index.module.css';
+
+import CiviaLogo from 'public/images/civia-logo.svg';
+import CiviaIcon from 'public/images/civia-icon.svg';
 
 const cls = classnames.bind(styles);
 
 const Header: FC<any> = () => {
 
     return (
-        <div className={styles.head}>
-            <div className={styles.content}>
-                
+        <div className={cls('head')}>
+            <div className={cls('content', 'nav', 'lg:container', 'lg:mx-auto', 'relative')}>
+                <div className={cls('flex', 'justify-between')}>
+                    <div className={cls('w-8', 'py-3')}>
+                        <Image src={CiviaIcon} alt='' />
+                    </div>
+                    <div className={cls('w-8', 'py-3')}>
+                        <Image src={CiviaLogo} alt='' />
+                    </div>
+                </div>
+                <div className={cls('descriptioin', 'absolute', 'align-center')}>
+                    <div>CIVIA the Social Wallet</div>
+                    <div>Opening of the Decentralized Society</div>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,41 @@
+.footer{
+    background:rgba(0, 35, 20, 1);
+    color: rgba(229, 229, 229, 1);
+    padding: 25px 40px;
+    text-align:right;
+    position:relative;
+
+    .info-table{
+        display:inline-block;
+        td{
+            padding: 6px 0 6px 40px;
+            font-size: 12px;
+        }
+
+        thead td{
+            color:rgba(76, 209, 48, 1);
+            font-size:14px;
+            padding: 10px 0 10px 40px;
+        }
+    }
+    .copy{
+        font-size:7px;
+        margin-top:60px;
+    }
+    .icon-logo{
+        position: absolute;
+        width:200px;
+        height:26px;
+        bottom: 25px;
+        img{
+            float:left;
+            height:25px;
+            &:first-child{
+                width:26px;
+            }
+            &:last-child{
+                width:60px;
+            }
+        }
+    }
+}

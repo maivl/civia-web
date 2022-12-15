@@ -6,6 +6,7 @@ import styles from './index.module.css';
 const cls = classnames.bind(styles);
 
 import Header from '../header';
+import Footer from '../footer';
 
 const Layout:FC<any> = ({ children }) => {
 
@@ -14,17 +15,15 @@ const Layout:FC<any> = ({ children }) => {
             <Head>
                 <title>Civia</title>
                 <meta name="description" content="Civia" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/images/civia-icon.svg" />
             </Head>
             <main className={styles.main}>
                 <Header />
                 {
                     children
                 }
+                <Footer />
             </main>
-            <footer className={styles.footer}>
-
-            </footer>
         </div>
     );
 };
