@@ -5,6 +5,9 @@
         width:1018px;
         margin:auto;
         border:1px solid transparent;
+        background: url(https://storageapi.fleek.co/c33f0f64-9add-4351-ac8c-c869d382d4f8-bucket/civia/pop0017.png.svg) no-repeat;
+        background-size: 500px;
+        background-position:center -40px;
     }
 
     .descriptioin{
