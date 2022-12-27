@@ -3,6 +3,8 @@ import Image from 'next/image';
 import classnames from 'classnames/bind';
 import styles from './index.module.css';
 
+import VideoCom from '../video';
+
 import CiviaLogo from 'public/images/civia-logo.svg';
 import CiviaIcon from 'public/images/civia-icon.svg';
 
@@ -21,6 +23,7 @@ const Header: FC<any> = () => {
                         <Image src={CiviaLogo} alt='' />
                     </div>
                 </div>
+                <VideoCom />
                 <div className={cls('descriptioin', 'absolute', 'align-center')}>
                     <div>CIVIA the Social Wallet</div>
                     <div>Opening of the Decentralized Society</div>
