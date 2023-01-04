@@ -1,16 +1,93 @@
+// @ts-nocheck
 import type { NextPage } from 'next';
 import classnames from 'classnames/bind';
-//
 import Layout from './components/layout';
 import styles from './index.module.css';
+import Image from 'next/image';
+import CiviaLogo from 'public/images/civia-logo.svg';
+import CiviaIcon from 'public/images/civia-icon.svg';
 //
 const cls = classnames.bind(styles);
 
 const Home: NextPage = () => {
+
     return (
         <Layout>
             <div className={cls('body')}>
-                <div className={cls('content')}>
+                <div className={cls('logo-item')}>
+                    <div className={cls('logo-left')} style={{ marginLeft: 180 }}>
+                        <Image src={CiviaIcon} alt='' />
+                    </div>
+                    <div className={cls('logo-right')} style={{ marginRight: 180 }}>
+                        <Image src={CiviaLogo} alt='' />
+                    </div>
+                </div>
+
+                <div className={cls('section', 'section-1')}>
+                    <div className={cls('title')}>Seedless <span>&</span><br/>Social Recovery</div>
+                    <div className={cls('description')}>
+                        <i>Private keys? Mnemonic phrases? No more!</i>
+                        <p>
+                            Civia social recovery mechanism <br/>guarantees 100% wallet recovery <br/>after you specify a few trusted <br/>friends as guardians, in simple <br/>steps.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-1.svg" />
+                </div>
+
+                <div className={cls('section', 'section-2')}>
+                    <div className={cls('title')}>Build your <span>social <br/>reputation</span> <br/>with peace of mind</div>
+                    <div className={cls('description')}>
+                        <i>My private key is leaked, the wallet <br/>address won't be safe. What about my <br/>nontransferable certificates and the <br/>social network I've been trying so hard to <br/>build?</i>
+                        <p>
+                        With the 100% social recovery <br/>mechanism, Civia reassign the <br/>controlling private key of the wallet <br/>to your specified new key, so that <br/>you can continue accumulate your <br/>social reputation with peace of <br/>mind.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-2.svg" />
+                </div>
+
+                <div className={cls('section', 'section-3')}>
+                    <div className={cls('title')}>Wallet Level <br/><span>Social Graph</span></div>
+                    <div className={cls('description')}>
+                        <i>So, I don't own my social graph? and <br/>my social graph can't be shared <br/>across DApps?</i>
+                        <p>
+                        Civia have your social graph in your <br/>wallet, and you can take it <br/>anywhere to any DApps.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-3.svg" />
+                </div>
+
+                <div className={cls('section', 'section-4')}>
+                    <div className={cls('title')}>User Defined <span>SBT</span></div>
+                    <div className={cls('description')}>
+                        <i>Why should anyone write a smart<br/>contract in order to issue SBTs?&nbsp;</i>
+                        <p>
+                            With Civia, anyone can issue SBTs to<br/>anyone else with no code written.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-4.svg" />
+                </div>
+
+                <div className={cls('section', 'section-5')}>
+                    <div className={cls('title')}>Ethereum <span>&</span> L2</div>
+                    <div className={cls('description')}>
+                        <p>
+                        NFT and token assets live on Ethereum, while functionalities and fun <br/>actions are on L2. <br/>Civia provides unified user experience <br/>across Ethereum and L2.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-5.svg" />
+                </div>
+
+                <div className={cls('section', 'section-6')}>
+                    <div className={cls('title')}>Wallet As A <span>Service</span></div>
+                    <div className={cls('description')}>
+                        <p>
+                        With the flexible multi-key mechanism, users<br/>get smooth surfing experience across multiple <br/>DApps each with their dedicated keys.  <br/>No need to switch keys between wallets and<br/>DApps.
+                        </p>
+                    </div>
+                    <img className={cls('image')} src="./images/desc-6.svg" />
+                </div>
+
+                {/* <div className={cls('content')}>
                     <section className={cls('section', 'section-1')}>
                         <div className={cls('title')}>
                             Seedless <span>&</span> <br/>Social Recovery
@@ -49,13 +126,13 @@ const Home: NextPage = () => {
                         User Defined <span>SBT</span><br/>&nbsp;
                         </div>
                         <div className={cls('description')}>
-                            <i>Why should anyone write a smart <br/>contract in order to issue SBTs?<br/>&nbsp;</i>
+                            <i>Why should anyone write a smart contract in order to issue SBTs?<br/>&nbsp;</i>
                             <p>
-                                With Civia, anyone can issue SBTs to <br/>anyone else with no code written.
+                                With Civia, anyone can issue SBTs to anyone else with no code written.
                             </p>
                         </div>
                     </section>
-                    <section className={cls('section', 'section-5')}>
+                    <section className={cls('section', 'section-5')} style={{ marginTop: 50 }}>
                         <div className={cls('title')}>
                         Ethereum <span>&</span> L2
                         </div>
@@ -77,7 +154,7 @@ const Home: NextPage = () => {
                             </p>
                         </div>
                     </section>
-                </div>
+                </div> */}
             </div>
         </Layout>
     );

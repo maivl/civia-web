@@ -1,12 +1,12 @@
 .box{
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -20px;
+    margin-top: 50px;
   }
   
   .cvs, .video{
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     margin:auto;
     background-image: radial-gradient(rgba(255, 255, 255, .75) 5%, rgba(255, 255, 255, 0) 80%);
     background-repeat: no-repeat;
